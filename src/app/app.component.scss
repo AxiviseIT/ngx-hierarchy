@@ -1,0 +1,16 @@
+.node-template{
+    text-align: center;
+    strong{
+        display: flex;
+        background-color: rgba(0,0,0,0.1);
+        padding: 0.25em;
+    }
+    span{
+        display: flex;
+        justify-content: center;
+        padding: 0.25em;
+    }
+    button{
+        margin-bottom: 0.5em;
+    }
+}

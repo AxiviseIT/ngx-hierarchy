@@ -1,0 +1,23 @@
+<div>
+  Hello
+</div>
+
+<ngx-hierarchy [nodes]="nodes" direction="vertical" [template]="nodeTemplate">
+  <ng-template #nodeTemplate let-node>
+    <div class="node-template">
+      <strong>{{node.position}} </strong>
+      <span>{{node.name}} </span>
+      <button (click)="node.onOk(node)">ok</button>
+    </div>
+  </ng-template>
+</ngx-hierarchy>
+
+<ngx-hierarchy [nodes]="nodes" direction="horizontal" [template]="nodeTemplate">
+  <ng-template #nodeTemplate let-node>
+    <div class="node-template">
+      <strong>{{node.position}} </strong>
+      <span>{{node.name}} </span>
+      <button (click)="node.onOk(node)">ok</button>
+    </div>
+  </ng-template>
+</ngx-hierarchy>
