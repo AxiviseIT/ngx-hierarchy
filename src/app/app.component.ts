@@ -1,6 +1,13 @@
 import { Component } from '@angular/core';
 import { INode } from 'ngx-hierarchy';
 
+
+interface custNode extends INode{
+  name:string;
+  position:string;
+  childs?:custNode[];
+  onOk:Function;
+}
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -72,12 +79,4 @@ export class AppComponent {
     alert(node.name);
   }
 
-}
-
-
-interface custNode extends INode{
-  name:string;
-  position:string;
-  childs?:custNode[];
-  onOk:Function;
 }

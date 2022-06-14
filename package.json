@@ -37,5 +37,19 @@
     "karma-jasmine-html-reporter": "~1.7.0",
     "ng-packagr": "^12.1.0",
     "typescript": "~4.3.2"
-  }
+  },
+  "author": "Rushik",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rushik1992/ngx-hierarchy.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rushik1992/ngx-hierarchy/issues"
+  },
+  "homepage": "https://github.com/rushik1992/ngx-hierarchy"
+  
 }
