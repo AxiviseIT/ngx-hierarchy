@@ -1,6 +1,8 @@
-<div>
-  Hello
-</div>
+
+<div class="root-container">
+<h1>
+  Vertical View
+</h1>
 
 <ngx-hierarchy [nodes]="nodes" direction="vertical" [template]="nodeTemplate">
   <ng-template #nodeTemplate let-node>
@@ -12,6 +14,9 @@
   </ng-template>
 </ngx-hierarchy>
 
+<h1>
+  Horizontal View
+</h1>
 <ngx-hierarchy [nodes]="nodes" direction="horizontal" [template]="nodeTemplate">
   <ng-template #nodeTemplate let-node>
     <div class="node-template">
@@ -21,3 +26,4 @@
     </div>
   </ng-template>
 </ngx-hierarchy>
+</div>

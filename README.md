@@ -54,6 +54,7 @@ export class AppModule { }
 import { Component } from '@angular/core';
 import { INode } from 'ngx-hierarchy';
 
+
 interface custNode extends INode{
   name:string;
   position:string;
@@ -77,7 +78,8 @@ export class AppComponent {
         {
           name: 'Antonia Sancho',
           cssClass: 'level2',
-          position: 'HR Manager'
+          position: 'HR Manager',
+          onOk: this.onOk
         },
         {
           name: 'Thoms Hilty',
@@ -87,14 +89,17 @@ export class AppComponent {
             {
               name: 'Eyal Matthews',
               cssClass: 'level3',
-              position: 'Social Media'
+              position: 'Social Media',
+              onOk: this.onOk
             },
             {
               name: 'Adam Mark',
               cssClass: 'level3',
-              position: 'Offline Marketing'
+              position: 'Offline Marketing',
+              onOk: this.onOk
             }
-          ]
+          ],
+          onOk: this.onOk
         },
         {
           name: 'Barry Roy',
@@ -104,20 +109,29 @@ export class AppComponent {
             {
               name: 'Ligia Opera',
               cssClass: 'level3',
-              position: 'Supply Chain'
+              position: 'Supply Chain',
+              onOk: this.onOk
             },
             {
               name: 'Moran Perry',
               cssClass: 'level3',
-              position: 'Operational Manager'
+              position: 'Operational Manager',
+              onOk: this.onOk
             }
-          ]
+          ],
+          onOk: this.onOk
         }
-      ]
+      ],
+      onOk: this.onOk
     }
   ];
   constructor(){
   }
+
+  onOk(node:custNode){
+    alert(node.name);
+  }
+
 }
 
 ```
@@ -130,8 +144,17 @@ export class AppComponent {
     <div class="node-template">
       <strong>{{node.position}} </strong>
       <span>{{node.name}} </span>
+      <button (click)="node.onOk(node)">ok</button>
     </div>
   </ng-template>
 </ngx-hierarchy>
 ```
 
+
+##Vertical View
+
+![NgxHierarchy Vertical View](https://raw.githubusercontent.com/rushik1992/ngx-hierarchy/master/projects/ngx-hierarchy/VerticalView.png)
+
+##Horizontal View
+
+![NgxHierarchy Horizontal View](https://raw.githubusercontent.com/rushik1992/ngx-hierarchy/master/projects/ngx-hierarchy/HorizontalView.png)
