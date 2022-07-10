@@ -151,10 +151,10 @@ export class AppComponent {
 ```
 
 
-##Vertical View
+## Vertical View
 
 ![NgxHierarchy Vertical View](https://raw.githubusercontent.com/rushik1992/ngx-hierarchy/master/projects/ngx-hierarchy/VerticalView.png)
 
-##Horizontal View
+## Horizontal View
 
 ![NgxHierarchy Horizontal View](https://raw.githubusercontent.com/rushik1992/ngx-hierarchy/master/projects/ngx-hierarchy/HorizontalView.png)
