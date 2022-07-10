@@ -1,13 +1,23 @@
 # NgxHierarchy
 
-`ngx-hierarchy` is an Angular Component Module for Vertical or Horizontal Hierarchy View. Cna be useed to show parent child view, Organization structure, Tree view. with your dynamic template
+`ngx-hierarchy` is an Angular Component Module for Vertical or Horizontal Hierarchy/Tree View. It can be used to show parent child view, Organization structure, Tree view. with your flaxible dynamic template design with controls.
 
 ## Installation
 
 ```sh
 $ npm install ngx-hierarchy
 ```
+## Vertical View
 
+![NgxHierarchy Vertical View](https://raw.githubusercontent.com/rushik1992/ngx-hierarchy/master/projects/ngx-hierarchy/VerticalView.png)
+
+## Horizontal View
+
+![NgxHierarchy Horizontal View](https://raw.githubusercontent.com/rushik1992/ngx-hierarchy/master/projects/ngx-hierarchy/HorizontalView.png)
+
+
+## Demo Link
+[Click Here](https://rushik1992.github.io/ngx-hierarchy/)
 
 ## Component Inputs
 
@@ -149,16 +159,3 @@ export class AppComponent {
   </ng-template>
 </ngx-hierarchy>
 ```
-
-
-## Vertical View
-
-![NgxHierarchy Vertical View](https://raw.githubusercontent.com/rushik1992/ngx-hierarchy/master/projects/ngx-hierarchy/VerticalView.png)
-
-## Horizontal View
-
-![NgxHierarchy Horizontal View](https://raw.githubusercontent.com/rushik1992/ngx-hierarchy/master/projects/ngx-hierarchy/HorizontalView.png)
-
-
-## Demo Link
-[Click Here](https://rushik1992.github.io/ngx-hierarchy/)

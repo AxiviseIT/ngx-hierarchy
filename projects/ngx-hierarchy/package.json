@@ -1,6 +1,6 @@
 {
   "name": "ngx-hierarchy",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "peerDependencies": {
     "@angular/common": "^12.1.0",
     "@angular/core": "^12.1.0"
@@ -20,6 +20,18 @@
   "bugs": {
     "url": "https://github.com/rushik1992/ngx-hierarchy/issues"
   },
-  "homepage": "https://github.com/rushik1992/ngx-hierarchy"
-  
+  "homepage": "https://github.com/rushik1992/ngx-hierarchy",
+  "keywords": [
+    "ngx-hierarchy",
+    "ngx hierarchy chart",
+    "hierarchy",
+    "hierarchical",
+    "tree view",
+    "hierarchy chart",
+    "angular hierarchy charts",
+    "vertical tree view",
+    "horizontal tree view",
+    "angular",
+    "ng"
+  ]
 }
