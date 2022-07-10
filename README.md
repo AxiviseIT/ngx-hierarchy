@@ -158,3 +158,7 @@ export class AppComponent {
 ## Horizontal View
 
 ![NgxHierarchy Horizontal View](https://raw.githubusercontent.com/rushik1992/ngx-hierarchy/master/projects/ngx-hierarchy/HorizontalView.png)
+
+
+## Demo Link
+[Click Here](https://rushik1992.github.io/ngx-hierarchy/)
