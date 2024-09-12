@@ -1,0 +1,20 @@
+<ngx-hierarchy-node *ngIf="node" ngClass="ngx-hierarchy-node-{{direction}}" [node]="node" [hasParent]="hasParent"
+  [template]="template "
+  [direction]="direction">
+</ngx-hierarchy-node>
+
+<div *ngIf="node?.childs?.length" ngClass="ngx-hierarchy-children-{{direction}}" class="ngx-hierarchy-children">
+  <ng-container *ngFor="let childNode of node?.childs; first as isFirst; last as isLast">
+    <div ngClass="children-container-{{direction}}" class="children-container">
+      <div ngClass="lines-container-{{direction}}" class="lines-container">
+        <div class="lines"></div>
+        <div class="m-line"></div>
+        <div class="lines"></div>
+      </div>
+      <ngx-hierarchy-node-container 
+      [template]="template"
+      [node]="childNode" [hasParent]="true" [direction]="direction">
+      </ngx-hierarchy-node-container>
+    </div>
+  </ng-container>
+</div>

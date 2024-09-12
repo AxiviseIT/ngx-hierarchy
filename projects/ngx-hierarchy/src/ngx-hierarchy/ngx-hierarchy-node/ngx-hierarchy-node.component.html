@@ -1,0 +1,5 @@
+<div ngClass="node-line-{{direction}}" class="node-line" *ngIf="hasParent"></div>
+<div [ngClass]="node.cssClass" class="node-box ngx-hierarchy-border">
+    <ng-container *ngTemplateOutlet="template context: {$implicit: node}"></ng-container>
+</div>
+<div ngClass="node-line-{{direction}}" class="node-line" *ngIf="node?.childs?.length"></div>

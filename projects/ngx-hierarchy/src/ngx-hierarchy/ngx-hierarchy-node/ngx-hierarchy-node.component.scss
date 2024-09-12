@@ -1,0 +1,27 @@
+:host {
+    display: flex;
+    align-items: center;
+}
+
+.node {
+    &-line {
+        background-color: darkgrey;
+        &-horizontal {
+            width: 1em;
+            height: 0.1em;
+        }
+
+        &-vertical {
+            height: 1em;
+            width: 0.1em;
+        }
+    }
+
+    &-box{
+        display: flex;
+        align-items: center;
+        color: black;
+        border-radius: .2em;
+        box-shadow: 0.05em 0.05em 0.2em 0.05em #0000002b;
+    }
+}

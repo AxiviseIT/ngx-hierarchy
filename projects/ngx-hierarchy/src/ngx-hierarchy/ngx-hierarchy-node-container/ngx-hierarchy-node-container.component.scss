@@ -1,0 +1,79 @@
+:host {
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+
+.ngx-hierarchy {
+    &-node-horizontal {
+        padding: 1em 0;
+    }
+    &-node-vertical {
+        flex-direction: column;
+        padding: 0 1em;
+    }
+    &-children {
+        display: flex;
+        flex: 1;
+
+        &-horizontal {
+            flex-direction: column;
+        }
+
+        .children-container {
+            display: flex;
+
+            &:first-child {
+                &>.lines-container {
+                    .lines {
+                        &:first-child {
+                            background-color:transparent;
+                        }
+                    }
+                }
+            }
+
+            &:last-child {
+                &>.lines-container {
+                    .lines {
+                        &:last-child {
+                            background-color:transparent;
+                        }
+                    }
+                }
+            }
+
+            &-vertical {
+                flex-direction: column;
+            }
+
+            .lines {
+                flex: 1;
+                background-color: darkgrey;
+                &-container {
+                    display: flex;
+                   
+                    &-vertical {
+                        .lines{
+                            height: 0.1em;
+                        }
+                        
+                    }
+                    &-horizontal {
+                        flex-direction: column;
+                        .lines{
+                            width: 0.1em;
+                            background-color: darkgrey;
+                        }
+                    }
+                }
+                
+            }
+            .m-line{
+                width: 0.1em;
+                height: 0.1em;
+                background-color: darkgrey;
+            }
+        }
+    }
+}
